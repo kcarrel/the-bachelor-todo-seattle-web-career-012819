@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   data[season].each do |contestant|
-    i
+    contestant.
 end
 
 def get_contestant_name(data, occupation)
