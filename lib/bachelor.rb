@@ -13,9 +13,10 @@ def get_contestant_name(data, occupation)
   data.each do |season, details|
     details.each do |contestant|
       contestant.each do |key,value|
-      if value == occupation
-        name = contestant["name"]
-        return name 
+        if value == occupation
+          name = contestant["name"]
+          return name 
+        end
       end
     end
   end
