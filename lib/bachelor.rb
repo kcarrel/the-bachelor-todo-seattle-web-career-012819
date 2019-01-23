@@ -12,7 +12,7 @@ end
 def get_contestant_name(data, occupation)
   data[occupation].each do |contestant|
     contestant.each do |key,value|
-      if value == occupation
+      if key == occupation
         name = contestant["name"]
         return name 
       end
