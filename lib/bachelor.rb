@@ -10,8 +10,9 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data[occupation].each do |contestant|
-    contestant.each do |key,value|
+  data.each do |season, details|
+    details.each do |contestant|
+      contestant.each do |key,value|
       if value == occupation
         name = contestant["name"]
         return name 
