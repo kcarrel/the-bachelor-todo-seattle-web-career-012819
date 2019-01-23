@@ -45,6 +45,7 @@ def get_occupation(data, hometown)
           return occupation
         end
       end
+    end
   end
 end
 
